@@ -1,0 +1,62 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background-color: #000;
+    color:#fff;
+    scroll-behavior: smooth;
+    padding: 10px;
+}
+
+:root{
+    --secondary_bg: #292626;
+    --tertiary_bg: #242424;
+}
+
+.secundary_bg {
+    background: var(--secondary_bg);
+}
+
+.tertiary_bg {
+    background: var(--tertiary_bg);
+}
+
+
+.your_library{
+    height: 12rem;
+    overflow-y: scroll;
+    
+}
+.your_library::-webkit-scrollbar{
+    width: 10px;
+    background-color: #070516;
+
+}
+
+.card {
+    background-color: var(#c7c1c1);
+    box-shadow: 0 0 5px 0 rgb(0, 0, 0);
+    cursor: pointer;
+    transition: all .3s ease-out;
+}
+
+/* btn play */
+
+.play_btn{
+    display: none!important;
+}
+
+.card:hover .play_btn{
+    display: block!important;
+    transition: all .3s ease-in;
+}
